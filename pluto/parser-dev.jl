@@ -25,12 +25,12 @@ begin
 end
 
 # ╔═╡ 2557eed2-0af8-4a7c-a807-0753255fc19d
-md"""*See version info* $(@bind versioninfo CheckBox())"""
+md"""*Notebook version **0.1.0**.  See version info* $(@bind versioninfo CheckBox())"""
 
 # ╔═╡ 71e79010-a5a8-4b78-aefb-3e0c588497e2
 if versioninfo
 	md"""
-- no releases yet
+- **0.1.0**: build a parser using adjacent clone of `Kanones.jl`
 	"""
 else
 	md""
@@ -38,13 +38,6 @@ end
 
 # ╔═╡ f78dfd75-0bd3-4e9c-8604-443d0ec92588
 md"""# Work on an *Iliad* parser"""
-
-# ╔═╡ f54640b9-cfa1-4da2-9256-62d63cd90359
-md""">
-> ### How to...
-> 
-
-"""
 
 # ╔═╡ 9823bc1c-b719-49c3-8f01-8acd219ca67c
 md"""## Load data"""
@@ -64,14 +57,15 @@ md""" ### See passages for form"""
 # ╔═╡ af175591-b8e8-48c3-a6d5-78b83d7756c4
 md"""*Token (string value)* $(confirm(@bind s TextField(placeholder="θυγατέρα")))"""
 
-# ╔═╡ 518991c3-b390-4cfe-8b28-f7cdcd9824c4
-
-
 # ╔═╡ 7b803068-4345-4c5d-915f-c159336ae12f
 html"""
 <br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/>
 <hr/>
 """
+
+# ╔═╡ 8583437e-f873-4e94-aec3-e27a8922d116
+md"""> **Computation you shouldn't need to consult**"""
 
 # ╔═╡ f53b222d-ef12-47ab-bd6c-e80131f94f8f
 md"""> Counting"""
@@ -161,6 +155,9 @@ parser = begin
 	rebuild
 	recompile(kroot) 
 end
+
+# ╔═╡ 7d5689b9-513b-4bbb-96b3-8c50773f465d
+parsetoken("", parser)
 
 # ╔═╡ 6405375f-061d-483f-bf3c-a4a2414c3625
 isnothing(parser) ? md"**Parser**: no parser loaded." : md"""**Parser**: compiled a parser capable of analyzing **$(length(parser.entries))** forms."""
@@ -1820,9 +1817,9 @@ version = "17.4.0+0"
 # ╟─2557eed2-0af8-4a7c-a807-0753255fc19d
 # ╟─71e79010-a5a8-4b78-aefb-3e0c588497e2
 # ╟─f78dfd75-0bd3-4e9c-8604-443d0ec92588
-# ╟─f54640b9-cfa1-4da2-9256-62d63cd90359
 # ╟─cc52eefd-c02c-4613-ae12-d3d187a4050e
 # ╟─9823bc1c-b719-49c3-8f01-8acd219ca67c
+# ╠═7d5689b9-513b-4bbb-96b3-8c50773f465d
 # ╟─80e2b82b-f123-4eaa-a0bd-55594abb2329
 # ╟─6405375f-061d-483f-bf3c-a4a2414c3625
 # ╟─0d8d99f2-339d-44f1-bc2c-04e6e99f4f0c
@@ -1841,8 +1838,8 @@ version = "17.4.0+0"
 # ╟─af175591-b8e8-48c3-a6d5-78b83d7756c4
 # ╟─28da3e9d-3f5b-4e93-a1ce-82aaa2d7e9a2
 # ╟─8ffbee45-878f-4500-9563-52ff385344b0
-# ╟─518991c3-b390-4cfe-8b28-f7cdcd9824c4
 # ╟─7b803068-4345-4c5d-915f-c159336ae12f
+# ╟─8583437e-f873-4e94-aec3-e27a8922d116
 # ╟─f53b222d-ef12-47ab-bd6c-e80131f94f8f
 # ╟─909e3e41-a20e-4b4d-a4c9-be18480de049
 # ╟─95cf96fc-0108-4c2a-80a9-38bc9dbf71a1
