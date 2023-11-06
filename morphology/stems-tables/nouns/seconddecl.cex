@@ -1,13 +1,19 @@
 StemUrn|LexicalEntity|Stem|Gender|InflClass|Accent|
 
+nounstems.n3997|lsjx.n3997|ἀλεξανδρ|masculine|os_ou|recessive|
 nounstems.n4667|lsjx.n4667|ἀλοχ|feminine|os_ou|recessive|
+nounstems.n6028|lsjx.n6028|ἀμφιπολ|feminine|os_ou|recessive|
+nounstems.n12700|lsjx.n12700|ἀποιν|neuter|os_ou_pl|recessive|
 
 nounstems.n50377|lsjx.n50377|ἰλι|neuter|os_ou|recessive|
 
 nounstems.n70684|lsjx.n70684|νη|masculine|os_ou|inflectionaccented|
 
 nounstems.n80240|lsjx.n80240|πεδι|neuter|os_ou|stemaccented|
+nounstems.n84434|lsj.n84434|πολεμ|masculine|os_ou|recessive|
 nounstems.n86354|lsjx.n86354|πριαμ|masculine|os_ou|recessive|
+
+nounstems.n102869|lsjx.n102869|τεκν|neuter|os_ou|recessive|
 
 
 
